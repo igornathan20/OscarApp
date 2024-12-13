@@ -2,7 +2,7 @@ package com.example.oscarapp
 
 object Vote {
     var userId: Long? = null
-    var userToken: Int? = null
+    var userToken: String? = null
     var selectedMovieId: Long? = null
     var selectedMovieName: String? = null
     var selectedDirectorId: Long? = null
