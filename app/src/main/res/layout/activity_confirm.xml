@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="#F7F7F7">
+
+    <!-- Título do Filme Selecionado -->
+    <TextView
+        android:id="@+id/tvSelectedMovie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filme Selecionado"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginBottom="8dp"
+        android:gravity="center" />
+
+    <!-- Título do Diretor Selecionado -->
+    <TextView
+        android:id="@+id/tvSelectedDirector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diretor Selecionado"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginBottom="24dp"
+        android:gravity="center" />
+
+    <!-- Campo de Entrada do Token -->
+    <EditText
+        android:id="@+id/etToken"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Insira o Token"
+        android:padding="16dp"
+        android:textColor="#333333"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center_horizontal"
+        android:inputType="text"/>
+
+    <!-- Botão Confirmar Voto -->
+    <Button
+        android:id="@+id/btnConfirmVote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirmar Voto"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#2196F3"
+        android:padding="12dp"
+        android:layout_gravity="center" />
+
+</LinearLayout>

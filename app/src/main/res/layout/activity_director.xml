@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F8F9FA"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <!-- Barra de progresso horizontal -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:indeterminate="true"
+        android:indeterminateTint="#4CAF50"
+        android:backgroundTint="#DDDDDD"
+        android:layout_marginBottom="16dp"
+        style="?android:attr/progressBarStyleHorizontal" />
+
+    <!-- Spinner para seleção de diretores -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selecione um Diretor"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginBottom="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerDirectors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/spinner_background"
+        android:padding="8dp"
+        android:spinnerMode="dropdown" />
+
+    <!-- Botão para votar -->
+    <Button
+        android:id="@+id/btnVoteDirector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Votar Diretor"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif-medium"
+        android:elevation="4dp" />
+</LinearLayout>

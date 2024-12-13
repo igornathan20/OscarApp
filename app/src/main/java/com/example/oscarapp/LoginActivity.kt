@@ -63,7 +63,7 @@ class LoginActivity : AppCompatActivity() {
                     // saveToken(token)
 
                     // Continuar para a próxima Activity
-                    startActivity(Intent(this, MainActivity::class.java))
+                    startActivity(Intent(this, MenuActivity::class.java))
                 } catch (e: JSONException) {
                     Log.e("LoginDebug", "Erro ao processar a resposta JSON: ${e.message}")
                     Toast.makeText(this, "Erro no servidor", Toast.LENGTH_SHORT).show()
